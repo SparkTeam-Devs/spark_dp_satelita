@@ -1,0 +1,73 @@
+.slider {
+
+    &__heading {
+        @include flex-row(8, space-between);
+        align-items: center;
+        margin-block: 34px 60px;
+    }
+
+    &__buttons {
+        @include flex-row(10);
+    }
+
+    &__button {
+        @include reset-button;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background: var(--BgButton);
+        position: relative;
+    }
+
+    &__slide {
+        @include flex-column(24);
+        padding: 40px;
+        width: 460px;
+        height: 380px;
+        border-radius: 16px;
+        border: 2px solid transparent;
+        background: linear-gradient(to left, #191910 0%, #0A0A0A 100%) padding-box,
+        linear-gradient(180deg, #191910 0%, #0A0A0A 100%) border-box;
+
+        &-user {
+            @include flex-row(12);
+            align-items: center;
+
+            &-avatar {
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                overflow: hidden;
+                background-color: var(--BgButton);
+            }
+
+            &-name {
+                &-title {
+                    @include font-dm-sans-32-bold;
+                    @include text-gradient(linear-gradient(#D1D1D1 0%, #7D7C62 100%));
+                }
+
+                &-date {
+                    color: var(--TextDark);
+                }
+            }
+        }
+
+        &-text {
+            @include font-dm-sans-20-regular;
+            color: var(--TextDark);
+        }
+
+        &-button {
+            @include reset-button;
+            @include flex-row(12);
+            align-items: center;
+            cursor: pointer;
+
+            &-text {
+                @include font-dm-sans-16-medium;
+                color: var(--Link);
+            }
+        }
+    }
+}

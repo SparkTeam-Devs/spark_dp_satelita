@@ -1,0 +1,39 @@
+.header {
+    margin-inline: auto; 
+    @include flex-row(20, space-between);
+    align-items: center;
+    height: 70px;
+    max-width: 1564px;
+    padding-inline: 20px;
+    border-radius: 12px;
+    border: 1px solid transparent;
+    background: linear-gradient( 155deg, #0F0F0F 0%, #0F0F0F 100%) padding-box,
+    linear-gradient( 0deg, #FFFFFF00 0%, #FFFFFF14 100%) border-box;
+
+    @media (max-width: 1560px) {
+        border-radius: 0 0 12px 12px;
+    }
+
+    &__logo {
+        @include flex-row(8);
+        align-items: center;
+
+        &-text {
+            @include font-dm-sans-24-bold;
+            @include text-gradient(linear-gradient(#D1D1D1 0%, #7D7C62 100%));
+        }
+    }
+
+    &__menu {
+        width: 100%;
+        max-width: 744px;
+        @include flex-row(8, space-between);
+        align-items: center;
+
+        &-item {
+            @include font-dm-sans-16-medium;
+            text-wrap: nowrap;
+        }
+    }
+
+}

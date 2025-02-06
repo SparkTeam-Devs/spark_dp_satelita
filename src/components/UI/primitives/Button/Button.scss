@@ -1,0 +1,53 @@
+.button {
+    @include font-dm-sans-16-semibold;
+    @include reset-button;
+    text-wrap: nowrap;
+    border: 1px solid transparent;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    border-radius: 150px;
+
+    cursor: pointer;
+
+    @include hover {
+        border-color: var(--DarkYellow);
+    }
+ 
+    &--size {
+        &-small {
+            padding: 11px 23px;
+        }
+        &-medium {
+            @include font-dm-sans-18-semibold;
+            text-transform: uppercase;
+            padding: 23px 39px;
+            @include flex-row(8);
+        }
+        &-large {
+            padding: 23px 39px;
+        }
+    }
+
+    &--color {
+        &-default {
+            color: var(--Link);
+            background-color: var(--BgButton);
+
+            @include hover {
+                border-color: var(--DarkYellow);
+                background-color: #12120B;
+            }
+        }
+        &-main {
+            border: none;
+            color: var(--Bg);
+            background: linear-gradient(to right, #DEC420 0%, #EA870B 100%);
+            transition: background 0.3s ease, color 0.3s ease;
+
+            @include hover {
+                background: linear-gradient(to right, #E5A314 0%, #EA4E0B 100%)
+
+            }
+        }
+    }
+}

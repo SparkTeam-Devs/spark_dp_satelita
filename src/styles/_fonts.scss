@@ -1,0 +1,355 @@
+@mixin font-dm-sans-96-bold {
+    font-family: var(--font-dm-sans);
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 110.0%;
+    text-decoration: none;
+    letter-spacing: normal;
+}
+
+@mixin font-dm-sans-80-semibold {
+    font-family: var(--font-dm-sans);
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 110.0%;
+    text-decoration: none;
+    letter-spacing: normal;
+}
+
+@mixin font-dm-sans-60-semibold {
+    font-family: var(--font-dm-sans);
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 110.0%;
+    text-decoration: none;
+    letter-spacing: normal;
+}
+
+@mixin font-dm-sans-60-semibold {
+    font-family: var(--font-dm-sans);
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 110.0%;
+    text-decoration: none;
+    letter-spacing: normal;
+}
+
+@mixin font-dm-sans-58-bold {
+    font-family: var(--font-dm-sans);
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 130.0%;
+    text-decoration: none;
+    letter-spacing: normal;
+}
+
+@mixin font-dm-sans-40-semibold {
+    font-family: var(--font-dm-sans);
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 130.0%;
+    text-decoration: none;
+    letter-spacing: normal;
+}
+
+@mixin font-dm-sans-40-bold {
+    font-family: var(--font-dm-sans);
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 130.0%;
+    text-decoration: none;
+    letter-spacing: normal;
+}
+
+@mixin font-dm-sans-32-bold {
+    font-family: var(--font-dm-sans);
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 130.0%;
+    text-decoration: none;
+    letter-spacing: normal;
+}
+
+@mixin font-dm-sans-24-semibold {
+    font-family: var(--font-dm-sans);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150.0%;
+    text-decoration: none;
+    letter-spacing: normal;
+}
+
+@mixin font-dm-sans-24-bold {
+    font-family: var(--font-dm-sans);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 135.0%;
+    text-decoration: none;
+    letter-spacing: calc(24px * -0.06);
+}
+
+@mixin font-dm-sans-24-bold-italic {
+    font-family: var(--font-dm-sans);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 130.0%;
+    text-decoration: none;
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: normal;
+}
+
+@mixin font-dm-sans-20-medium {
+    font-family: var(--font-dm-sans);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 135.0%;
+    text-decoration: none;
+    letter-spacing: normal;
+}
+
+@mixin font-dm-sans-20-medium-150 {
+    font-family: var(--font-dm-sans);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150.0%;
+    text-decoration: none;
+    letter-spacing: normal;
+}
+
+@mixin font-dm-sans-20-regular {
+    font-family: var(--font-dm-sans);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150.0%;
+    text-decoration: none;
+    letter-spacing: normal;
+}
+
+@mixin font-dm-sans-18-semibold {
+    font-family: var(--font-dm-sans);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 135.0%;
+    text-decoration: none;
+    letter-spacing: normal;
+}
+
+@mixin font-dm-sans-18-regular {
+    font-family: var(--font-dm-sans);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150.0%;
+    text-decoration: none;
+    letter-spacing: normal;
+}
+
+@mixin font-dm-sans-16-medium {
+    font-family: var(--font-dm-sans);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 135.0%;
+    text-decoration: none;
+    letter-spacing: normal;
+}
+
+@mixin font-dm-sans-16-semibold {
+    font-family: var(--font-dm-sans);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150.0%;
+    text-decoration: none;
+    letter-spacing: normal;
+}
+
+@mixin font-dm-sans-14-medium {
+    font-family: var(--font-dm-sans);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150.0%;
+    text-decoration: none;
+    letter-spacing: normal;
+}
+
+@mixin font-inter-24-black-italic {
+    font-family: var(--font-inter);
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 130.0%;
+    font-style: italic;
+    text-decoration: none;
+    letter-spacing: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@mixin font-inter-14-semibold {
+    font-family: var(--font-inter);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 120.0%;
+    text-decoration: none;
+    letter-spacing: normal;
+}
+
+@mixin font-inter-16-semibold {
+    font-family: var(--font-inter);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150.0%;
+    text-decoration: none;
+    letter-spacing: normal;
+}
+
+@mixin font-inter-18-bold {
+    font-family: var(--font-inter);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120.0%;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: normal;
+}
+
+@mixin font-inter-20-bold {
+    font-family: var(--font-inter);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150.0%;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: normal;
+}
+
+@mixin font-inter-24-semibold {
+    font-family: var(--font-inter);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150.0%;
+    text-decoration: none;
+    letter-spacing: normal;
+}
+
+@mixin font-inter-28-bold {
+    font-family: var(--font-inter);
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 120.0%;
+    text-decoration: none;
+    letter-spacing: normal;
+}
+
+@mixin font-inter-32-bold {
+    font-family: var(--font-inter);
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 150.0%;
+    text-decoration: none;
+    letter-spacing: normal;
+}
+
+
+@mixin font-inter-40-semibold {
+    font-family: var(--font-inter);
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 150.0%;
+    text-decoration: none;
+    letter-spacing: normal;
+}
+
+@mixin font-inter-44-bold {
+    font-family: var(--font-inter);
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 120.0%;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: normal;
+}
+
+@mixin font-inter-60-bold {
+    font-family: var(--font-inter);
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 120.0%;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: normal;
+}
+
+
+@mixin font-inter-20-regular {
+    font-family: var(--font-inter);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 135.0%;
+    text-decoration: none;
+    letter-spacing: calc(20px * -0.04);
+}
+
+@mixin font-inter-16-regular {
+    font-family: var(--font-inter);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150.0%;
+    text-decoration: none;
+    letter-spacing: normal;
+}
+
+@mixin font-inter-14-regular {
+    font-family: var(--font-inter);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150.0%;
+    text-decoration: none;
+    letter-spacing: normal;
+}
+
+@mixin font-inter-12-regular {
+    font-family: var(--font-inter);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 150.0%;
+    text-decoration: none;
+    letter-spacing: normal;
+}
+
+@mixin font-inter-14-regular-uppercase {
+    font-family: var(--font-inter);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150.0%;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: normal;
+}
+
+@mixin font-inter-16-medium {
+    font-family: var(--font-inter);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150.0%;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: normal;
+}
+
+@mixin font-manrope-16-semibold {
+    font-family: var(--font-manrope);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150.0%;
+    text-decoration: none;
+    letter-spacing: normal;
+}

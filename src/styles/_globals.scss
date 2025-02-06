@@ -1,0 +1,51 @@
+body {
+  @include font-dm-sans-20-medium;
+  color: var(--Text);
+
+  
+  background-color: var(--Bg);
+
+  white-space: pre-line;
+}
+
+// * {
+//   outline: 1px solid red;
+// }
+
+a,
+button,
+input,
+textarea,
+svg * {
+  transition-duration: var(--transition-duration);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, .h1 {
+  @include text-gradient(linear-gradient(#D1D1D1 0%, #7D7C62 100%));
+  @include font-dm-sans-96-bold;
+  @include fluid-text(96, 40);
+  margin: 0;
+}
+
+h2, .h2 {
+  @include text-gradient(linear-gradient(#D1D1D1 0%, #7D7C62 100%));
+  @include font-dm-sans-80-semibold;
+  @include fluid-text(80, 40);
+}
+
+h3, .h3 {
+  @include text-gradient(linear-gradient(#D1D1D1 0%, #7D7C62 100%));
+  @include font-dm-sans-60-semibold;
+  @include fluid-text(60, 40);
+}
+
+h4, .h4 {
+  color: var(--White);
+  @include font-dm-sans-40-semibold;
+  @include fluid-text(40, 24);
+}

@@ -1,0 +1,18 @@
+@import
+    'variables',
+    'mixins',
+    'media',
+    'normalize',
+    'utils',
+    'fonts',
+    'globals';
+
+@import
+    'blocks/header',
+    'blocks/footer';
+
+// @import
+//     'blocks/footer',
+//     'blocks/header',
+//     'blocks/burger',
+//     'blocks/notfound';
