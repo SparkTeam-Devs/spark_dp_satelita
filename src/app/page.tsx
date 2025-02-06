@@ -129,7 +129,7 @@ export default function Home() {
             <h3 className="main__services-title">Discover modes</h3>
           </div>
           <div className="main__services-wrapper">
-            <p className="main__services-description">Besides main Undress Mode, there are several new modes. Don't miss the opportunity to try each one.</p>
+            <p className="main__services-description">Besides main Undress Mode, there are several new modes. Don&apos;t wait miss the opportunity to try each one.</p>
           </div>
         </div>
         <div className="main__services-content">

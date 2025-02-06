@@ -9,7 +9,6 @@ import 'swiper/css/navigation';
 import './Slider.scss'
 
 import { Navigation } from 'swiper/modules';
-import Image from 'next/image'
 import { ArrowIcon, ArrowRightUpIcon } from '../UI/svg';
 
 const Slider = () => {

@@ -1,7 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  sassOptions: {
+	output: "export",
+	basePath: "/",
+	assetPrefix: "/",
+
+  	sassOptions: {
 		additionalData: `@import "src/styles/_mixins.scss"; @import "src/styles/_fonts.scss";  @import "src/styles/_media.scss";`,
 	},
 	webpack(config) {
