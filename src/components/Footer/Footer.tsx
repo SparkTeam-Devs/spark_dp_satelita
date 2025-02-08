@@ -2,6 +2,8 @@ import Button from "../UI/primitives/Button/Button";
 import Image from "next/image";
 import logoFooter from '@/public/Icons/Footer/LogoFooter.png'
 import { FacebookIcon, InstagramIcon, TelegramIcon, TwitterIcon } from "../UI/svg";
+import ButtonLink from "@/src/shared/data/mainPageText";
+import Link from "next/link";
 
 const Footer = () => {
     return (
@@ -18,9 +20,12 @@ const Footer = () => {
                         <div className="footer__name-social-icon icon"><TwitterIcon /></div>
                         <div className="footer__name-social-icon icon"><InstagramIcon /></div>
                     </div>
-                    <p className="footer__name-text">Ai Undresser © 2025. All rights reserved.</p>
+                    <p className="footer__name-text hidden-tablet">Ai Undresser © 2025. All rights reserved.</p>
                 </div>
-                <ul className="footer__menu hidden-mobile">
+                <Link href={ButtonLink} className="footer__button visible-tablet">
+                    <Button size="medium" >Try it now</Button>
+                </Link>
+                <ul className="footer__menu">
                     <li className="footer__menu-item">Home</li>
                     <li className="footer__menu-item">How to works</li>
                     <li className="footer__menu-item">Why choose us</li>
@@ -29,7 +34,10 @@ const Footer = () => {
                     <li className="footer__menu-item">Reviews</li>
                     <li className="footer__menu-item">FAQ</li>
                 </ul>
-                <Button size="medium" >Try it now</Button>
+                <Link href={ButtonLink} className="hidden-tablet">
+                    <Button size="medium">Try it now</Button>
+                </Link>
+                <p className="footer__name-text visible-tablet">Ai Undresser © 2025. All rights reserved.</p>
             </div>
         </footer>
     )

@@ -1,6 +1,8 @@
 import Image from "next/image"
 import LogoIcon from "../../../public/Icons/Header/LogoIcon.png"
 import Button from "../UI/primitives/Button/Button"
+import Link from "next/link"
+import ButtonLink from "@/src/shared/data/mainPageText"
 
 const Header = () => {
     return (
@@ -15,7 +17,9 @@ const Header = () => {
                 <li className="header__menu-item">Reviews</li>
                 <li className="header__menu-item">FAQ</li>
             </ul>
-            <Button >Try it now</Button>
+            <Link href={ButtonLink} className="header__button">
+                <Button >Try it now</Button>
+            </Link>
         </header>
     )
 }

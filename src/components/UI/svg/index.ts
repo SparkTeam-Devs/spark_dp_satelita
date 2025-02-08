@@ -12,3 +12,7 @@ export {default as InstagramIcon} from './InstagramIcon.svg';
 export {default as FireIcon} from './FireIcon.svg';
 export {default as ArrowIcon} from './ArrowIcon.svg';
 export {default as ArrowRightUpIcon} from './ArrowRightUpIcon.svg';
+
+export {default as Star} from './Star.svg';
+export {default as PlanFeatureIcon} from './PlanFeatureIcon.svg';
+

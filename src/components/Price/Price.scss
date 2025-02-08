@@ -1,0 +1,191 @@
+.price {
+    @include flex-column;
+
+    &__toggle {
+        @include flex-row(12);
+        align-items: center;
+        align-self: center;
+
+        &-text {
+            color: var(--Text)
+        }
+    }
+
+    &__switch {
+        @include reset-button;
+        position: relative;
+        display: inline-block;
+        width: 80px;
+        height: 40px;
+        background-color: #262626;
+        border-radius: 83px;
+        cursor: pointer;
+
+        &--active {
+            background-color: var(--Link);
+        }
+
+        &-circle {
+            position: absolute;
+            top: 7px;
+            left: 7px;
+            width: 26px;
+            height: 26px;
+            background: linear-gradient( to right, #D4BD2B 0%, #EA870B 100%);
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+
+            &--active {
+                transform: translateX(42px);
+                background: #262626;
+            }
+        }
+    }
+
+    &__content {
+        @include flex-row(16);
+        justify-content: space-between;
+        overflow: auto;
+        margin-top: 80px;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        @include mobile {
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+            margin-top: 40px;
+        }
+    }
+
+    &__card {
+        border-radius: 32px;
+        background: linear-gradient( to bottom, #191910 0%, #0A0A0A 100%) padding-box,
+        linear-gradient(to bottom, #191910 0%, #0A0A0A 100%) border-box;
+        max-width: 460px;
+        min-width: 400px;
+        width: 100%;
+        height: 100%;
+        @include flex-column(32);
+        padding-bottom: 44px;
+        border: 2px solid transparent;
+        position: relative;
+
+        @include mobile {
+            min-width: 100%;
+        }
+
+        &--active {
+            background: radial-gradient(370% 100% at 50% 0%, #58531A 0%, #191910 17%, #0A0A0A 100%) padding-box,
+            linear-gradient(180deg, #D4BD2B 0%, #060505 100%) border-box;
+        }
+
+        &-header {
+            padding-bottom: 32px;
+            position: relative;
+            padding: 44px 36px 32px 36px;
+
+            &::after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 1px;
+                background-color: #303033;
+                left: 0;
+                bottom: 0;
+            }
+            
+        }
+
+        &-body {
+            @include flex-column(16);
+            padding: 0 36px;
+
+            &-item {
+                @include flex-row(12);
+                align-items: center;
+                @include font-dm-sans-18-regular;
+                color: #B1B1B1;
+
+                &--active {
+                    @include text-gradient(linear-gradient(to right, #D4BD2B 0%, #EA870B 100%));
+                    text-transform: uppercase
+                }
+            }
+        }
+
+        &-title {
+            @include font-inter-24-black-italic;
+            text-transform: uppercase;
+            color: var(--Link);
+        }
+
+        &-price {
+            @include font-dm-sans-56-bold;
+            margin-bottom: 8px;
+        }
+
+        &-info {
+            @include flex-row(12);
+            align-items: center;
+
+            &-item {
+                padding: 8px 12px;
+                border-radius: 50px;
+                background-color: var(--Bg);
+
+                @include font-dm-sans-14-medium;
+                color: var(--Gray2);
+            }
+
+            &-circle {
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background-color: var(--Link);
+                
+            }
+        }
+
+        &-button {
+            @include reset-button;
+            padding: 24px 40px;
+            background-color: var(--BgButton);
+            border-radius: 150px;
+            width: 100%;
+
+            &-link {
+                padding-inline: 36px;
+            }
+
+            &-inner {
+                @include flex-row(8, center);
+                align-items: center;
+
+                @include font-dm-sans-18-semibold;
+                text-transform: uppercase;
+                color: var(--Link);
+
+                &-old {
+                    opacity: 0.3;
+                }
+
+
+
+            }
+
+            &--active {
+                background: linear-gradient(to right, #D4BD2B 0%, #EA870B 100%);
+
+                & > * {
+                    color:  var(--Bg);
+                }
+            }
+        }
+
+    }
+
+
+}

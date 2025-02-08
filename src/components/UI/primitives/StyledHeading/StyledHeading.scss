@@ -11,6 +11,10 @@
     background: linear-gradient(to right, #121107 0%, #050505 100%) padding-box,
     linear-gradient( to right, #D4BD2B 0%, #060505 100%) border-box;
 
+    @include mobile {
+        @include font-dm-sans-16-medium;
+    }
+
     &__text {
         @include text-gradient(linear-gradient(to right, #D4BD2B 0%, #EA870B 100%));
         @include flex-row(8);

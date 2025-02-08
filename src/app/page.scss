@@ -1,4 +1,5 @@
 .main {
+    overflow: hidden;
 
     &__line {
         width: 100%;
@@ -13,10 +14,20 @@
         align-items: center;
         overflow: hidden;
 
+        @include tablet {
+            margin-top: 40px;
+        }
+
         &-vector {
             position: absolute;
             left: 0;
             top: 0;
+
+            @include tablet {
+                width: 317px;
+                height: auto;
+                
+            }
         }
 
         &-title {
@@ -27,8 +38,12 @@
 
         &-description {
             margin-bottom: 40px;
-            max-width: 550px;
+            max-width: 1050px;
             text-align: center;
+
+            @include tablet {
+                margin-bottom: 32px;
+            }
         }
 
         &-video {
@@ -37,6 +52,11 @@
             max-width: 884px;
             height: auto;
             margin-left: 78px;
+
+            @include tablet {
+                margin-top: 40px;
+                margin-left: 0;
+            }
 
             & > video {
                 width: 100%;
@@ -62,6 +82,14 @@
         border-radius: 12px;
         background-color: #FFFFFF02; 
 
+        @include tablet {
+            margin-top: 40px;
+        }
+
+        &-wrapper {
+            width: 100%;
+        }
+
         &-title {
             @include font-dm-sans-32-bold;
             font-size: 16px;
@@ -71,6 +99,14 @@
 
         &-list {
             @include flex-row(5, space-between);
+            overflow: auto;
+            width: 100%;
+            border-radius: 15px;
+
+            &::-webkit-scrollbar {
+                width: 0px;
+                height: 0px;
+            }
             
         }
     }
@@ -80,11 +116,22 @@
         margin-top: 90px;
         height: 695px;
         align-items: center;
+
+        @media screen and (max-width: 1350px) {
+            height: auto;
+        }
+
+        @include tablet {
+            flex-direction: column;
+            height: auto;
+            gap: 10px;
+            margin-top: 40px;
+        }
         
 
         &-text {
             @include flex-column(34);
-            max-width: 844px;
+            
             width: 100%;
             position: relative;
             z-index: 5;
@@ -92,6 +139,11 @@
 
         &-list {
             @include flex-row(10, space-between);
+
+            @media screen and (max-width: 1350px) {
+                flex-direction: column;
+                
+            }
         }
 
         &-item {
@@ -136,6 +188,13 @@
             overflow: hidden;
             padding: 20px;
             z-index: 5;
+            flex: 0 0 auto;
+
+            @include mobile {
+                width: 100%;
+                height: 100%;
+                overflow: visible;
+            }
             
             &-wrapper {
                 width: 488.3px;
@@ -146,6 +205,13 @@
                 transform: rotate(-3deg);
                 padding: 15px;
                 z-index: 5;
+
+                @include mobile {
+                    border-radius: 22px;
+                    width: 100%;
+                    height: 100%;
+                    padding: 10px;
+                }
             }
 
             &::before {
@@ -156,6 +222,10 @@
                 width: 1px;
                 height: 100%;
                 background: linear-gradient(#06050500 0%, #6F6318 50%, #06050500 100%);
+
+                @include mobile {
+                    display: none;
+                }
             }
             &::after {
                 content: "";
@@ -175,8 +245,13 @@
             &-item {
                 width: 100%;
                 height: 100%;
-                object-fit: cover;
+                
                 border-radius: 20px;
+
+                @include mobile {
+                    border-radius: 15px;
+
+                }
             }
         }
     }
@@ -184,6 +259,10 @@
     &__how-it-works {
         margin-top: 90px;
         @include flex-column;
+
+        @include tablet {
+            margin-top: 40px;
+        }
 
         &-heading {
             align-self: center;
@@ -205,6 +284,11 @@
         &-info {
             @include flex-row(20);
             margin-top: 28px;
+
+            @include tablet {
+                flex-direction: column;
+                gap: 10px;
+            }
             
         }
 
@@ -216,6 +300,10 @@
             background: linear-gradient(to left, #0A0A0A 0%, #0A0A0A 100%) padding-box,
             linear-gradient(180deg, #191910 0%, #0A0A0A 100%) border-box;
 
+            @include tablet {
+                padding: 20px;
+            }
+
             &-icon {
                 border-radius: 16px;
                 border: 1px solid transparent;
@@ -224,16 +312,33 @@
                 width:100px;
                 height: 100px;
                 margin-bottom: 40px;
+
+                @include tablet {
+                    width: 80px;
+                    height: 80px;
+                }
+            }
+
+            &-image {
+                width: 72px;
+                height: 72px;
+
+                @include tablet {
+                    width: 57px;
+                    height: 57px;
+                }
             }
 
             &-title {
                 @include font-dm-sans-32-bold;
                 @include text-gradient(linear-gradient(#D1D1D1 0%, #7D7C62 100%));
                 margin-bottom: 8px;
+                @include fluid-text(32, 24);
             }
 
             &-description {
                 color: var(--TextDark);
+                @include fluid-text(20, 16);
             }
         }
     }
@@ -243,42 +348,128 @@
         @include flex-column;
         align-items: center;
 
+        @include tablet {
+            margin-top: 40px;
+        }
+
         &-title {
             margin-block: 28px 12px;
+            text-align: center;
         }
 
         &-description {
             margin-bottom: 60px;
             max-width: 644px;
             text-align: center;
+            @include fluid-text(20, 14);
+            color: var(--Text);
+
+            @include tablet {
+                margin-bottom: 20px;
+            }
         }
 
         &-wrapper {
             @include flex-row(12);
             flex-wrap: wrap;
+
+            @include tablet {
+                flex-wrap: nowrap;
+                overflow-x: scroll;
+
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+            }
         }
 
         &-item {
             width: 346px;
-            height: 346px;
+            height: auto;
             flex: auto;
             border-radius: 17.65px;
             background-color: #6F6318;
+            object-fit: cover;
+
+            @include tablet {
+                width: 408px;
+                border-radius: 20px;
+            }
             
+        }
+    }
+
+    &__pricing {
+        margin-top: 90px;
+        padding: 80px 0;
+        position: relative;
+        @include flex-column;
+        
+        &-text {
+            @include flex-column(28);
+            align-items: center;
+            align-self: center;
+            margin-bottom: 12px;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: linear-gradient(to right, #0A0A0A 0%, #454526 50%,#0A0A0A 100%);
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: linear-gradient(to right, #0A0A0A 0%, #454526 50%,#0A0A0A 100%);
+        }
+        
+
+        @include tablet {
+            margin-top: 40px;
+            padding: 40px 0;
         }
     }
 
     &__services {
         margin-top: 90px;
+
+        @include tablet {
+            position: relative;
+            margin-top: 40px;
+        }
         
         &-vector {
             position: absolute;
             right: 0;
             transform: translateY(30px);
+
+            @include tablet{
+                width: 280px;
+                height: auto;
+                right: -11px;
+                top: -50px;
+            }
         }
 
         &-text {
             @include flex-row;
+            
+            @include mobile {
+                flex-direction: column;
+                gap: 12px;
+
+                padding-bottom: 34px;
+                border-bottom: 1px solid var(--BgButton);
+            }
 
         }
 
@@ -296,6 +487,10 @@
             @include flex-row;
             margin-top: 60px;
             flex-wrap: wrap;
+
+            @include mobile {
+                margin-top: 0;
+            }
         }
 
         &-item {
@@ -325,8 +520,14 @@
                 border-bottom: 1px solid var(--BgButton);
             }
 
+            @include tablet {
+                border: none;
+                padding: 20px 0;
+            }
+
             &-title {
                 margin-bottom: 4px;
+                font-size: 40px;
             }
 
             &-images {
@@ -336,6 +537,11 @@
                 height: 400px;
                 border-radius: 20px;
                 overflow: hidden;
+
+                @include mobile {
+                    height: 250px;
+                    border-radius: 13px;
+                }
 
                 &-img {
                     width: 50%;
@@ -351,6 +557,10 @@
 
     &__reviews {
         margin-top: 90px;
+
+        @include tablet {
+            margin-top: 40px;
+        }
 
         &-heading {
             position: relative;
@@ -411,6 +621,20 @@
             border: 4px solid transparent;
             overflow: hidden;
 
+            @include tablet {
+                padding: 60px 40px;
+                height: auto;
+                margin-bottom: 40px;
+            }
+
+            @include mobile {
+                padding: 32px 32px 56px 32px;
+                height: auto;
+
+                @include flex-column;
+                gap: 40px;
+            }
+
             &-image {
                 position: absolute;
                 top: 0;
@@ -440,6 +664,7 @@
             &-description {
                 color: var(--TextDark);
                 max-width: 400px;
+                @include fluid-text(20, 16);
             }
 
             &-text {
@@ -452,6 +677,15 @@
                 @include flex-column(12);
                 position: relative;
                 z-index: 5;
+
+                & > a > button {
+                    justify-content: center;
+                    width: 100%;
+                }
+
+                @include mobile {
+                    margin-top: 0;
+                }
 
                 & > span {
                     text-align: center;
@@ -466,6 +700,11 @@
         flex-direction: row;
         margin-bottom: 80px;
 
+        @include tablet {
+            flex-direction: column;
+            margin-bottom: 40px;
+        }
+
         &-text{
             max-width: 620px;
             width: 100%;
@@ -478,6 +717,11 @@
         &-accordion {
             width: 100%;
             max-width: 800px;
+
+            @include tablet {
+                max-width: 100%;
+                margin-top: 20px;
+            }
         }
     }
 }

@@ -30,6 +30,10 @@
         @include flex-row(8, space-between);
         align-items: center;
 
+        @include tablet {
+            display: none;
+        }
+
         &-item {
             @include font-dm-sans-16-medium;
             text-wrap: nowrap;
