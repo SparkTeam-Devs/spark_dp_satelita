@@ -24,7 +24,7 @@ import Price from "../components/Price/Price";
 export default function Home() {
   return (
     <div className="main container" >
-      <section className="main__banner">
+      <section className="main__banner" id="home">
         <Image className="main__banner-vector" src={LightMain} alt="banner" />
         <StyledHeading>AI Undresser</StyledHeading>
         <h1 className="main__banner-title">Undress ai is your new assistant in the undress with ai sphere.</h1>
@@ -34,28 +34,31 @@ export default function Home() {
         </Link>
         <div className="main__banner-video">
           <Image className="main__banner-video-vector" src={GridVector} alt="vector" />
-          <video autoPlay loop muted playsInline>
-            <source src="/videos/Video1.mp4" type="video/mp4" />
-          </video>
+          <div className="main__banner-video-wrapper">
+            <Link href={ButtonLink} className="main__banner-video-button"></Link>
+            <video autoPlay loop muted playsInline>
+              <source src="/videos/Video1.mp4" type="video/mp4" />
+            </video>
+          </div>
         </div>
       </section>
-      <section className="main__table-contents">
+      <section className="main__table-contents" id="table-contents">
           <div className="main__table-contents-wrapper">
             <p className="main__table-contents-title">Table of Contents</p>
             <div className="main__table-contents-list">
-              <Button>Home</Button>
-              <Button>Why choose us</Button>
-              <Button>About AI Tool</Button>
-              <Button>Pricing Plans</Button>
-              <Button>Result from our service</Button>
-              <Button>Discover Modes</Button>
-              <Button>Referral Program</Button>
-              <Button>Reviews</Button>
-              <Button>FAQ</Button>
+              <Button href="#home">Home</Button>
+              <Button href="#choose">Why choose us</Button>
+              <Button href="#how-to-works">About AI Tool</Button>
+              <Button href="#pricing">Pricing Plans</Button>
+              <Button href="#reviews">Result from our service</Button>
+              <Button href="#services">Discover Modes</Button>
+              <Button href="#referral">Referral Program</Button>
+              <Button href="#reviews">Reviews</Button>
+              <Button href="#faq">FAQ</Button>
             </div>
           </div>
       </section>
-      <section className="main__choose">
+      <section className="main__choose" id="choose">
         <Image src={GridVector2} alt="vector" className="main__choose-vector hidden-mobile" />
         <div className="main__choose-text">
           <StyledHeading>Why choose us</StyledHeading>
@@ -93,7 +96,7 @@ export default function Home() {
         </div>
       </section>
       <div className="main__line"/>
-      <section className="main__how-it-works">
+      <section className="main__how-it-works" id="how-to-works">
         <div className="main__how-it-works-heading"><StyledHeading>About AI Tool</StyledHeading></div>
         <h2 className="main__how-it-works-title">How It Works?</h2>
         <p className="main__how-it-works-description">Technologies allow you to use a modern development called AI Undresser. </p>
@@ -113,7 +116,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="main__gallery">
+      <section className="main__gallery" id="gallery">
         <StyledHeading>Gallery</StyledHeading>
         <h2 className="main__gallery-title">Result from our service</h2>
         <p className="main__gallery-description">To use Undress AI, you will need to upload a photo. You can do it for free first. Then, just wait a little and follow the several steps.</p>
@@ -123,14 +126,14 @@ export default function Home() {
           ))}
         </div>
       </section>
-      <section className="main__pricing">
+      <section className="main__pricing" id="pricing">
         <div className="main__pricing-text">
           <StyledHeading>Pricing Plans</StyledHeading>
           <h2 className="main__pricing-title">Pricing Plans</h2>
         </div>
         <Price />
       </section>
-      <section className="main__services">
+      <section className="main__services" id="services">
         <div className="main__services-text">
           <div className="main__services-wrapper">
             <StyledHeading>Our Services</StyledHeading>
@@ -176,14 +179,14 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="main__reviews">
+      <section className="main__reviews" id="reviews">
         <Image className="main__reviews-vector hidden-mobile" src={GridVector2} alt="vector" />
         <div className="main__reviews-heading"><StyledHeading>Our Users Feedback</StyledHeading></div>
         <div className="main__reviews-slider">
           <Slider />
         </div>
         <div className="main__line visible-mobile"/>
-        <div className="main__reviews-banner">
+        <div className="main__reviews-banner" id="referral">
           <Image className="main__reviews-banner-vector hidden-tablet" src={ReferralVectorContainer} alt="vector" />
           <Image className="main__reviews-banner-image hidden-tablet" src={ReferralImage} alt="vector" />
           <div className="main__reviews-banner-text">
@@ -200,7 +203,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="main__faq">
+      <section className="main__faq" id="faq">
         <div className="main__faq-text">
           <StyledHeading>FAQ</StyledHeading>
           <h3 className="main__faq-title">Frequently Asked Questions</h3>

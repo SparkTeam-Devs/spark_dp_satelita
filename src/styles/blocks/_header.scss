@@ -29,6 +29,8 @@
         max-width: 744px;
         @include flex-row(8, space-between);
         align-items: center;
+        position: relative;
+        z-index: 10;
 
         @include tablet {
             display: none;

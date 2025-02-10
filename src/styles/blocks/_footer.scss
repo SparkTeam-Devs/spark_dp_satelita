@@ -26,6 +26,7 @@
     &__name {
         @include tablet {
             @include flex-row(0, space-between);
+            flex-wrap: wrap;
         }
         &-logo {
             @include flex-row(12);

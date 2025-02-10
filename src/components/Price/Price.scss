@@ -7,7 +7,11 @@
         align-self: center;
 
         &-text {
-            color: var(--Text)
+            color: var(--Text);
+
+            @include mobile {
+                font-size: 18px
+            }
         }
     }
 
@@ -57,6 +61,7 @@
             gap: 20px;
             align-items: center;
             margin-top: 40px;
+
         }
     }
 
@@ -96,12 +101,20 @@
                 left: 0;
                 bottom: 0;
             }
+
+            @include mobile {
+                padding: 36px 10px 32px 10px;
+            }
             
         }
 
         &-body {
             @include flex-column(16);
             padding: 0 36px;
+
+            @include mobile {
+                padding: 0 10px;
+            }
 
             &-item {
                 @include flex-row(12);
@@ -158,6 +171,10 @@
 
             &-link {
                 padding-inline: 36px;
+
+                @include mobile {
+                    padding-inline: 10px;
+                }
             }
 
             &-inner {

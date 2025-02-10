@@ -26,13 +26,13 @@ const Footer = () => {
                     <Button size="medium" >Try it now</Button>
                 </Link>
                 <ul className="footer__menu">
-                    <li className="footer__menu-item">Home</li>
-                    <li className="footer__menu-item">How to works</li>
-                    <li className="footer__menu-item">Why choose us</li>
-                    <li className="footer__menu-item">Gallery us</li>
-                    <li className="footer__menu-item">Pricing Plans</li>
-                    <li className="footer__menu-item">Reviews</li>
-                    <li className="footer__menu-item">FAQ</li>
+                    <li className="footer__menu-item"><Link href="#home">Home</Link></li>
+                    <li className="footer__menu-item"><Link href="#how-to-works">How to works</Link></li>
+                    <li className="footer__menu-item"><Link href="#choose">Why choose us</Link></li>
+                    <li className="footer__menu-item"><Link href="#gallery">Gallery us</Link></li>
+                    <li className="footer__menu-item"><Link href="#pricing">Pricing Plans</Link></li>
+                    <li className="footer__menu-item"><Link href="#reviews">Reviews</Link></li>
+                    <li className="footer__menu-item"><Link href="#faq">FAQ</Link></li>
                 </ul>
                 <Link href={ButtonLink} className="hidden-tablet">
                     <Button size="medium">Try it now</Button>

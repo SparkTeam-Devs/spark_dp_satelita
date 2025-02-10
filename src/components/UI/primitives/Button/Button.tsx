@@ -26,7 +26,7 @@ ButtonContent.displayName = 'ButtonContent';
 const Button = (props:ButtonProps) => {
     if (props.href) {
         return (
-            <Link className="button" href={props.href}>Button</Link>
+            <Link className="button" href={props.href}><ButtonContent {...props} /></Link>
         )
     }
     return (
