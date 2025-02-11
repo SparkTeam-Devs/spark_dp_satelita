@@ -32,7 +32,7 @@ const VerticalSlider = () => {
                     <SwiperSlide key={index} className="vertical-slider__slide">
                         <div className="vertical-slider__slide-text">
                             <div className="vertical-slider__slide-heading">{slide.title}</div>
-                            <h2 className="vertical-slider__slide-title">{slide.text}</h2>
+                            <p className="vertical-slider__slide-title h2">{slide.text}</p>
                         </div>
                         <Image className="vertical-slider__slide-image" src={slide.img} alt="image" />
                     </SwiperSlide>
@@ -52,7 +52,7 @@ const VerticalSlider = () => {
                     <SwiperSlide key={index} className="vertical-slider__slide">
                         <div className="vertical-slider__slide-text">
                             <div className="vertical-slider__slide-heading">{slide.title}</div>
-                            <h2 className="vertical-slider__slide-title">{slide.text}</h2>
+                            <p className="vertical-slider__slide-title h2">{slide.text}</p>
                         </div>
                         <Image className="vertical-slider__slide-image" src={slide.img} alt="image" />
                     </SwiperSlide>

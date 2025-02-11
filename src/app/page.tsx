@@ -25,7 +25,7 @@ export default function Home() {
   return (
     <div className="main container" >
       <section className="main__banner" id="home">
-        <Image className="main__banner-vector" src={LightMain} alt="banner" />
+        <Image className="main__banner-vector" src={LightMain} alt="undress ai remover" />
         <StyledHeading>AI Undresser</StyledHeading>
         <h1 className="main__banner-title">Undress ai is your new assistant in the undress with ai sphere.</h1>
         <p className="main__banner-description">Undress AI is a tool that lets you remove clothes from photos in just a few seconds. It’s designed to make your life more fun and your pictures look even better. With Undress Me AI, you can explore creativity and make unique, artistic images. It’s like stepping into a world of beauty and creating something special with the help of AI. Give it a try and see what you can create!</p>
@@ -33,7 +33,7 @@ export default function Home() {
           <Button size="medium" color="main" iconSvg={<RocketIcon />}>Launch up</Button>
         </Link>
         <div className="main__banner-video">
-          <Image className="main__banner-video-vector" src={GridVector} alt="vector" />
+          <Image className="main__banner-video-vector" src={GridVector} alt="undress ai." />
           <div className="main__banner-video-wrapper">
             <Link href={ButtonLink} className="main__banner-video-button"></Link>
             <video autoPlay loop muted playsInline>
@@ -59,7 +59,7 @@ export default function Home() {
           </div>
       </section>
       <section className="main__choose" id="choose">
-        <Image src={GridVector2} alt="vector" className="main__choose-vector hidden-mobile" />
+        <Image src={GridVector2} alt="undress ai websites" className="main__choose-vector hidden-mobile" />
         <div className="main__choose-text">
           <StyledHeading>Why choose us</StyledHeading>
           <h3 className="main__choose-title">With our app, you can watch live broadcasts and receive countless statistics, tips,</h3>
@@ -118,7 +118,7 @@ export default function Home() {
       </section>
       <section className="main__gallery" id="gallery">
         <StyledHeading>Gallery</StyledHeading>
-        <h2 className="main__gallery-title">Result from our service</h2>
+        <p className="main__gallery-title h2">Result from our service</p>
         <p className="main__gallery-description">To use Undress AI, you will need to upload a photo. You can do it for free first. Then, just wait a little and follow the several steps.</p>
         <div className="main__gallery-wrapper">
           {GalleryMain.map((item, index) => (
@@ -129,7 +129,7 @@ export default function Home() {
       <section className="main__pricing" id="pricing">
         <div className="main__pricing-text">
           <StyledHeading>Pricing Plans</StyledHeading>
-          <h2 className="main__pricing-title">Pricing Plans</h2>
+          <p className="main__pricing-title h2">Pricing Plans</p>
         </div>
         <Price />
       </section>
@@ -187,8 +187,8 @@ export default function Home() {
         </div>
         <div className="main__line visible-mobile"/>
         <div className="main__reviews-banner" id="referral">
-          <Image className="main__reviews-banner-vector hidden-tablet" src={ReferralVectorContainer} alt="vector" />
-          <Image className="main__reviews-banner-image hidden-tablet" src={ReferralImage} alt="vector" />
+          <Image className="main__reviews-banner-vector hidden-tablet" src={ReferralVectorContainer} alt="Undress nude ai" />
+          <Image className="main__reviews-banner-image hidden-tablet" src={ReferralImage} alt="best ai undress app" />
           <div className="main__reviews-banner-text">
             <div className="main__reviews-banner-heading">
               <FireIcon />

@@ -3,6 +3,8 @@ import { DM_Sans, Inter, Manrope} from "next/font/google";
 import "../styles/index.scss";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
+import Head from "next/head";
+import Link from "next/link";
 
 const dmSans = DM_Sans({
   variable: "--font-dm-sans",
@@ -33,6 +35,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${dmSans.variable} ${inter.variable} ${manrope.variable}`}>
+        <Head>
+          <Link rel="canonical" href="https://undress-ai.com/" />
+        </Head>
         <Header />
         {children}
         <Footer />
