@@ -20,7 +20,6 @@ import Price from "../components/Price/Price";
 
 
 
-
 export default function Home() {
   return (
     <div className="main container" >
@@ -29,7 +28,7 @@ export default function Home() {
         <StyledHeading>AI Undresser</StyledHeading>
         <h1 className="main__banner-title">Undress ai is your new assistant in the undress with ai sphere.</h1>
         <p className="main__banner-description">Undress AI is a tool that lets you remove clothes from photos in just a few seconds. It’s designed to make your life more fun and your pictures look even better. With Undress Me AI, you can explore creativity and make unique, artistic images. It’s like stepping into a world of beauty and creating something special with the help of AI. Give it a try and see what you can create!</p>
-        <Link href={ButtonLink}>
+        <Link href={ButtonLink} className="main__banner-button">
           <Button size="medium" color="main" iconSvg={<RocketIcon />}>Launch up</Button>
         </Link>
         <div className="main__banner-video">

@@ -34,16 +34,25 @@
             margin-bottom: 16px;
             margin-top: 28px;
             text-align: center;
+            position: relative;
+            z-index: 10;
         }
 
         &-description {
             margin-bottom: 40px;
             max-width: 1050px;
             text-align: center;
+            position: relative;
+            z-index: 10;
 
             @include tablet {
                 margin-bottom: 32px;
             }
+        }
+
+        &-button {
+            position: relative;
+            z-index: 10;
         }
 
         &-video {
@@ -93,7 +102,7 @@
 
     &__table-contents {
         margin-top: 90px;
-        padding: 32px;
+        padding: 32px 20px;
         border-radius: 12px;
         background-color: #FFFFFF02; 
 

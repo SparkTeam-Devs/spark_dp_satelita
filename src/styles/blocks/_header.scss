@@ -13,6 +13,10 @@
     @media (max-width: 1560px) {
         border-radius: 0 0 12px 12px;
     }
+    &__button {
+        position: relative;
+        z-index: 10;
+    }
 
     &__logo {
         @include flex-row(8);

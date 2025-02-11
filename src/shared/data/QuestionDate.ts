@@ -1,7 +1,7 @@
 
 const QuestionMain = [
     {
-        title: 'What is undress ai. and how do undress ai websites work?',
+        title: 'What is undress ai and how do undress ai websites work?',
         text: 'Undress. ai is an artificial intelligence that can generate nude photos. Undress ai naked “undresses” a photo by analyzing photos and the database it was trained on.',
     },
     {
